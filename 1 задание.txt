@@ -1,0 +1,73 @@
+Исходный код:
+<header>Узнай на все 100 %!</header>
+<section>
+    <h1>Языки программирования</h1>
+    <figure>
+        <img src="https://www.python.org/static/img/python-logo.png">		1.
+        <figcaption>Логотип Python</figcaption>
+    </figure>
+    <article>
+        <p>Изучать Python очень весело</p>
+        <p>Но нужно читать и практиковаться</p>
+        <p>И сильно-сильно стараться</p>
+    </article>
+</section>
+<nav>										2.
+    <a href="#">Главная страница</a><br>
+    <a href="#">Раздел 1</a><br>
+    <a href="#">Раздел 2</a><br>
+</nav>
+<footer>Успехов в освоении</footer>
+
+Ошибки в коде:
+
+1. Отсутствует атрибут alt
+Как должно выглядеть: <img src="https://www.python.org/static/img/python-logo.png" alt="Логотип Python">
+
+2. Чтобы навигация была более заметной тег <nav> следует разместить после тега <header>,
+ а также добавить тег <li> для создания списков:
+
+    <header>Узнай на все 100 %!</header>
+    <nav>
+        <ul>
+            <li><a href="#">Главная страница</a></li>
+            <li><a href="#">Раздел 1</a></li>
+            <li><a href="#">Раздел 2</a></li>
+        </ul>
+    </nav>
+
+3. Для корректности следует добавить тег <body>, <html>, <head>,<meta> и декларацию <!DOCTYPE html>, 
+которая указывает браузеру, что документ написан на HTML5
+Как должно выглядеть:
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+</head>
+<body>
+    <header>Узнай на все 100 %!</header>
+    <nav>
+        <ul>
+            <li><a href="#">Главная страница</a></li>
+            <li><a href="#">Раздел 1</a></li>
+            <li><a href="#">Раздел 2</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Языки программирования</h1>
+        <figure>
+            <img src="https://www.python.org/static/img/python-logo.png" alt="Логотип Python">
+            <figcaption>Логотип Python</figcaption>
+        </figure>
+        <article>
+            <p>Изучать Python очень весело</p>
+            <p>Но нужно читать и практиковаться</p>
+            <p>И сильно-сильно стараться</p>
+        </article>
+    </section>
+    <footer>Успехов в освоении</footer>
+</body>
+</html>
